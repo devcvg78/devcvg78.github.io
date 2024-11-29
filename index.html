@@ -1,109 +1,215 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>By Carlos Veliz Garcia</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: salmon;
-        }
+    <meta charset="utf-8">
+    <title>By Carlos Veliz | Explorando</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
-        }
+    <link href="imagenes_download/iconoPagina.png" rel="icon">
 
-        .box {
-            flex: 1;
-            width: 100%;
-            margin-bottom: 20px;
-            border: 2px solid violet;
-            border-radius: 10px;
-            background-color: cadetblue;
-            overflow: hidden;
-        }
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #333;
-            text-align: justify;
-            padding: 20px;
-        }
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-        .titulo {
-            font-size: 30px;
-            line-height: 1.6;
-            color: blue;
-            text-align: center;
-            padding: 10px;
-        }
-
-        audio {
-            width: 100%;
-            max-width: 400px;
-            margin: 20px 0;
-            background-color: #f0f0f0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-        }
-
-        audio:hover {
-            background-color: #e0e0e0;
-        }
-    </style>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_div.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">
-            <img id="imagenPeluche" src="/imagenes/imagen01.png" alt="Peluche">
-        </div>
-        <div class="box">
-            <div class="titulo">
-                <center><strong style="font-family: 'Arial', sans-serif; font-size: 36px; font-style: italic;">El arte de los atardeceres</strong></center>
+
+    <div class="container-fluid p-0 mb-5">
+        <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="imagenes_download/celebration.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <br><br><br><br><br><br><br><br>
+                        <h2 class="text-primary font-weight-medium m-0">Feliz cumpleaños!</h2>
+                        <h1 class="display-4 text-white m-0">MAESTRO RICARDO</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="imagenes_download/celebration-03.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <br><br><br><br><br><br><br><br>
+                        <h2 class="text-primary font-weight-medium m-0">Feliz cumpleaños!</h2>
+                        <h1 class="display-4 text-white m-0">MAESTRO RICARDO</h1>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="w-100" src="imagenes_download/celebration-02.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <br><br><br><br><br><br><br><br>
+                        <h2 class="text-primary font-weight-medium m-0">Feliz cumpleaños!</h2>
+                        <h1 class="display-4 text-white m-0">MAESTRO RICARDO</h1>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="w-100" src="imagenes_download/position-01.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <br><br><br><br><br><br><br><br>
+                        <h2 class="text-primary font-weight-medium m-0">Feliz cumpleaños!</h2>
+                        <h1 class="display-4 text-white m-0">MAESTRO RICARDO</h1>
+                    </div>
+                </div>
             </div>
-
-            <p>
-                Los atardeceres son un regalo del cielo, un instante en el que el día se despide con una explosión de
-                colores. En su calma, nos invitan a detenernos, a respirar profundo y a contemplar la belleza de lo
-                efímero. Cada tonalidad, cada luz que se apaga, nos susurra que incluso los finales tienen su encanto.
-                En los sunsets encontramos inspiración, paz y, a veces, hasta respuestas que no sabíamos que buscábamos.
-
-                <br><br><strong>"El cielo se tiñe de oro y fuego, como si cada atardecer quisiera recordarnos que siempre hay
-                    algo bello por lo que agradecer."</strong>
-            </p>
-            <audio controls>
-                <source src="/imagenes/Coldplay - A Sky Full Of Stars.mp3" type="audio/mp3">
-            </audio>
+            <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
     </div>
 
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title ">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">EXPLORANDO</h4>
+                <h1 class="display-4">RICARDO SANTIAGO MUSSE CARRASCO</h1>
+                <h4>"En la intersección de la enseñanza, la escritura, la poesía, el derecho, la narrativa, el ensayo,
+                    el periodismo cultural y el análisis, encuentro mi propósito: transformar ideas en acciones,
+                    palabras en justicia y relatos en conexiones humanas profundas."</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 py-0 py-lg-5 hidden-left">
+                    <center>
+                        <h1 class="mb-3">Docente</h1>
+                    </center>
+                    <h5 class="mb-3">La verdadera educación no solo llena la mente, sino que también inspira el
+                        corazón.</h5>
+                    <p class="parrafo1">Como docente, he dedicado mi vida a guiar y motivar a los estudiantes,
+                        infundiéndoles no solo conocimientos, sino también una pasión por aprender y crecer. Mi enfoque
+                        educativo trasciende las aulas, dejando una huella duradera en cada mente y corazón.</p>
+                </div>
+    
+                <div class="col-lg-4 py-0 py-lg-5 hidden-right">
+                    <center>
+                        <h1 class="mb-3">Poeta</h1>
+                    </center>
+                    <h5 class="mb-3">La poesía es el arte de decir lo que no se puede expresar con palabras comunes,
+                        tocando el alma con la esencia de la belleza.</h5>
+                    <p>En mi papel de poeta, me gusta transformar emociones y pensamientos en versos delicados y
+                        poderosos. Mi habilidad para capturar la esencia de la vida en poesía me permite ofrecer a mis
+                        lectores una ventana a un mundo donde cada palabra resuena con belleza y verdad, convirtiendo lo
+                        cotidiano en algo sublime.
+                    </p>
+                </div>
+    
+                <div class="col-lg-4 py-0 py-lg-5 hidden-left">
+                    <center>
+                        <h1 class="mb-3">Escritor</h1>
+                    </center>
+                    <h5 class="mb-3">Escribir es un acto de valentía: plasmar en palabras lo que el alma desea
+                        compartir con el mundo.</h5>
+                    <p>Como escritor, he tejido mundos con mi pluma, ofreciendo a mis lectores un refugio de imaginación
+                        y reflexión. Mis obras no solo narran historias, sino que también invitan a explorar los matices
+                        más profundos de la experiencia humana, desafiando y encantando con cada página.</p>
+                </div>
+    
+                <div class="col-lg-4 py-0 py-lg-5 hidden-right">
+                    <center>
+                        <h1 class="mb-3">Abogado</h1>
+                    </center>
+                    <h5 class="mb-3">La justicia es la brújula que guía mi labor, defendiendo con firmeza los
+                        derechos y la dignidad de cada individuo.</h5>
+                    <p>Como abogado, me dedico a defender los derechos de las personas y a luchar por la justicia. Mi
+                        objetivo es proporcionar una representación legal sólida y ética, asegurando que cada cliente
+                        reciba el apoyo y la defensa que merece.</p>
+                </div>
+    
+                <div class="col-lg-4 py-5 py-lg-0 hidden-right" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 hidden-right" src="imagenes_download/position-02.jpg"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 py-0 py-lg-5 hidden-left">
+                    <center>
+                        <h1 class="mb-3">Cuentista</h1>
+                    </center>
+                    <h5 class="mb-3">Los cuentos son ventanas a mundos ocultos, donde cada relato es una aventura que
+                        trasciende el tiempo y el espacio.</h5>
+                    <p>Como cuentista, me deleito en tejer narrativas que transportan a mis lectores a lugares
+                        inesperados y maravillosos. Cada cuento que escribo está impregnado de imaginación y emoción,
+                        ofreciendo una experiencia que desafía la realidad y despierta la fantasía en cada corazón.</p>
+                </div>
+    
+                <div class="col-lg-4 py-0 py-lg-5 hidden-right">
+                    <center>
+                        <h1 class="mb-3">Ensayista</h1>
+                    </center>
+                    <h5 class="mb-3">El ensayo es una exploración intelectual que revela verdades ocultas, invitando al
+                        lector a reflexionar y cuestionar.</h5>
+                    <p>En mi rol de ensayista, me dedico a analizar y desentrañar las complejidades del mundo que nos
+                        rodea. A través de mis ensayos, invito a los lectores a profundizar en diversas temáticas,
+                        proporcionando perspectivas novedosas y estimulando el pensamiento crítico con cada reflexión.
+                    </p>
+                </div>
+    
+                <div class="col-lg-4 py-0 py-lg-5 hidden-left">
+                    <center>
+                        <h1 class="mb-3">Periodista Cultural</h1>
+                    </center>
+                    <h5 class="mb-3">La cultura es el latido de una sociedad, y como periodista cultural, tengo la
+                        misión de capturar y compartir su esencia.</h5>
+                    <p>Como periodista cultural, mi objetivo es documentar y difundir la riqueza y diversidad de las
+                        expresiones artísticas y culturales. Mi trabajo se centra en brindar una visión comprensiva y
+                        apreciativa de las artes, conectando a las audiencias con el vibrante pulso cultural de nuestro
+                        tiempo.</p>
+                </div>
+    
+                <div class="col-lg-4 py-0 py-lg-5 hidden-right">
+                    <center>
+                        <h1 class="mb-3">Articulista</h1>
+                    </center>
+                    <h5 class="mb-3">Cada artículo es una voz en el coro de la opinión pública, ofreciendo claridad y
+                        perspectiva en medio del ruido cotidiano.</h5>
+                    <p>En mi papel de articulista, me esfuerzo por proporcionar análisis y opiniones bien fundamentadas
+                        sobre temas de interés actual. A través de mis escritos, busco informar, persuadir y estimular
+                        el debate, contribuyendo a una conversación pública más rica y matizada.</p>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">Carlos Veliz</a>. All Rights Reserved.</a></p>
+            <p class="m-0 text-white">Designed by <a class="font-weight-bold" href="#">Carlos Veliz</a></p>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/transiciones_div.js"></script>
 </body>
-<script>
-    var imagenes = ["/imagenes/imagen01.png", "/imagenes/imagen02.png", "/imagenes/imagen03.jpg", "/imagenes/imagen04.jpg"];
-    var indice = 0;
-
-    function cambiarImagen() {
-        document.getElementById("imagenPeluche").src = imagenes[indice];
-        indice = (indice + 1) % imagenes.length;
-    }
-
-    setInterval(cambiarImagen, 2000);
-</script>
 
 </html>
