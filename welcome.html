@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Carlos Veliz Garcia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: salmon;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .box {
+            flex: 1;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 2px solid violet;
+            border-radius: 10px;
+            background-color: cadetblue;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            padding: 20px;
+        }
+
+        .titulo {
+            font-size: 30px;
+            line-height: 1.6;
+            color: blue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px 0;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        audio:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="imagenPeluche" src="/imagenes/imagen01.png" alt="Peluche">
+        </div>
+        <div class="box">
+            <div class="titulo">
+                <center><strong style="font-family: 'Arial', sans-serif; font-size: 36px; font-style: italic;">El arte de los atardeceres</strong></center>
+            </div>
+
+            <p>
+                Los atardeceres son un regalo del cielo, un instante en el que el día se despide con una explosión de
+                colores. En su calma, nos invitan a detenernos, a respirar profundo y a contemplar la belleza de lo
+                efímero. Cada tonalidad, cada luz que se apaga, nos susurra que incluso los finales tienen su encanto.
+                En los sunsets encontramos inspiración, paz y, a veces, hasta respuestas que no sabíamos que buscábamos.
+
+                <br><br><strong>"El cielo se tiñe de oro y fuego, como si cada atardecer quisiera recordarnos que siempre hay
+                    algo bello por lo que agradecer."</strong>
+            </p>
+            <audio controls>
+                <source src="/imagenes/Coldplay - A Sky Full Of Stars.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
+
+</body>
+<script>
+    var imagenes = ["/imagenes/imagen01.png", "/imagenes/imagen02.png", "/imagenes/imagen03.jpg", "/imagenes/imagen04.jpg"];
+    var indice = 0;
+
+    function cambiarImagen() {
+        document.getElementById("imagenPeluche").src = imagenes[indice];
+        indice = (indice + 1) % imagenes.length;
+    }
+
+    setInterval(cambiarImagen, 2000);
+</script>
+
+</html>
